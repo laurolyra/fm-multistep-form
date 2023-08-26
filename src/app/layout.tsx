@@ -1,6 +1,7 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { Ubuntu } from 'next/font/google';
+import { Providers } from '@/redux/provider';
 
 const baseFont = Ubuntu({
   weight: '400',
@@ -20,7 +21,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={baseFont.className}>{children}</body>
+      <body className={baseFont.className}>
+        <Providers>{children}</Providers>
+      </body>
     </html>
   );
 }
