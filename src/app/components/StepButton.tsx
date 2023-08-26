@@ -1,3 +1,3 @@
 export default function StepButton() {
-  return <button>StepButton</button>;
+  return <button type="submit">StepButton</button>;
 }

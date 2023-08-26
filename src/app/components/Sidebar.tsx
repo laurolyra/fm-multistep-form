@@ -10,7 +10,7 @@ export default function Sidebar() {
         layout="fill"
         objectFit="cover"
       />
-      <div className="relative">
+      <div className="relative h-full">
         <h2 className="text-center font-semibold text-4xl pb-8 pt-14">
           Sidebar
         </h2>
