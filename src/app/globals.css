@@ -7,6 +7,11 @@
     @apply text-3xl
   }
 }
+@layer components {
+  .my-custom-input {
+    @apply border border-gray-300 text-sm rounded-lg focus:outline-none focus:ring-1 focus:ring-violet-500 block p-2.5
+  }
+}
 /* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;

@@ -4,7 +4,7 @@ import { useAppSelector } from '@/redux/hooks';
 
 export default function Sidebar() {
   const step = useAppSelector((state) => state.stepperReducer.value);
-  console.log('step', step);
+
   return (
     <aside className="relative h-full">
       <Image

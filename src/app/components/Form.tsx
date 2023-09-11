@@ -1,7 +1,7 @@
 import { useAppSelector } from '@/redux/hooks';
 import Initial from './steps/Initial';
 import Plan from './steps/Plan';
-import AddOns from './steps/addOns';
+import AddOns from './steps/AddOns';
 import Summary from './steps/Summary';
 
 export default function Form() {
@@ -24,7 +24,7 @@ export default function Form() {
         e.preventDefault();
         console.log('submit');
       }}
-      className="h-full flex flex-col justify-between p-3"
+      className="h-full flex flex-col justify-between pb-3"
     >
       {generateStep(step)}
     </form>

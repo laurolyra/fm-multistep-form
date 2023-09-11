@@ -1,8 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
 import stepperReducer from './slices/stepSlice';
+import timeReducer from './slices/timeSlice';
 
 export const store = configureStore({
-  reducer: { stepperReducer },
+  reducer: { stepperReducer, timeReducer },
   devTools: process.env.NODE_ENV !== 'production',
 });
 
